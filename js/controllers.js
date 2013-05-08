@@ -6,16 +6,18 @@ function CategoryListCtrl($scope, $location, Categories) {
 }
 
 function CategoryDetailCtrl($scope, $routeParams, Category) {
+    var catText = $routeParams.categoryText.toLowerCase();
     $scope.category = Category.get({
-       categoryText: $routeParams.categoryText
+       categoryText: catText
     }, function (category) {
     });
  
 }
 
 function ArticleDetailCtrl($scope, $routeParams, Article) {
+    var artText = $routeParams.articleText.toLowerCase();
     $scope.article = Article.get({
-       articleText: $routeParams.articleText
+       articleText: artText
     }, function (article) {
     	console.log(article);
     });
