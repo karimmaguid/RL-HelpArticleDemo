@@ -1,20 +1,8 @@
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="helparticles">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-
   <title>Rocket Lawyer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <style type="text/css">
-/*<![CDATA[*/
-          body {
-                padding-bottom: 40px;
-          }
-          .sidebar-nav {
-                padding: 9px 0;
-          }
-  /*]]>*/
-  </style>
   <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
   <link href="css/rl.css" rel="stylesheet" type="text/css" />
   <script src="js/angular.min.js" type="text/javascript">
@@ -31,8 +19,7 @@
 </head>
 
 <body>
-  <!-- topbar starts -->
-
+   <!-- topbar starts -->
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container-fluid">
@@ -56,7 +43,7 @@
     </div>
   </div><!-- topbar ends -->
 
-  <div class="main help-article" ng-controller="CategoryListCtrl">
+  <div class="main help-article">
     <div class="container-fluid">
       <div class="row-fluid">
         <!-- left menu starts -->
@@ -65,11 +52,8 @@
           <div class="well nav-collapse sidebar-nav">
             <ul class="nav nav-tabs nav-stacked main-menu">
               <li class="nav-header hidden-tablet" data-toggle="collapse" data-target=
-        ".top-nav.nav-collapse,.sidebar-nav.nav-collapse">Categories</li>
+              ".top-nav.nav-collapse,.sidebar-nav.nav-collapse">Categories</li>
 
-              <li ng-repeat="cat in categories"><a
-              class="ajax-link" href="{{cat.url}}"><i class="icon-{{cat.icon}}"></i>  <span class=
-              "hidden-tablet">{{cat.text}}</span></a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -79,11 +63,10 @@
           <!-- content starts -->
 
           <div class="span8 article-left">
-            <div ng-view=""></div>
+            <div ng-view></div>
           </div>
 
           <div class="span4 article-right">
-            <!-- help_article_html_block.vm -->
 
             <div class="widget-frame lawyers">
               <h3>Get connected with a local lawyer</h3><span class="copy">Members save
@@ -160,8 +143,7 @@
       </div><!--/fluid-row-->
       <hr />
     </div><!--/.fluid-container-->
-  </div>
-<script src="js/jquery-1.7.2.min.js" type="text/javascript">
+  </div><script src="js/jquery-1.7.2.min.js" type="text/javascript">
 </script><script src="js/bootstrap-collapse.js" type="text/javascript">
 </script>
 </body>

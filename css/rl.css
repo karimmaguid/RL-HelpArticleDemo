@@ -206,3 +206,9 @@
 .disabled{
     color: #000;
 }
+body {padding-bottom: 40px;}
+.sidebar-nav { padding: 9px 0;}
+.nav-description {
+    padding-left: 12px;
+    padding-right: 12px;
+}

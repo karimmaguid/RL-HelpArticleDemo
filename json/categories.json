@@ -2,16 +2,20 @@
     {
         "text": "Affidavits",
         "url": "#category/Affidavits",
-        "icon": "bookmark"
+        "icon": "bookmark",
+        "description" : "This is what this topic means"
     },
     {
         "text": "Bill of Sale",
         "url": "#category/Bill-of-Sale",
-        "icon": "tags"
+        "icon": "tags",
+        "description" : "This is what this topic means"
+
     },
     {
         "text": "Divorce and Legal Separation",
         "url": "#category/Divorce-and-Legal-Separation",
-        "icon": "random"
+        "icon": "random",
+        "description" : "This is what this topic means"
     }
 ]
