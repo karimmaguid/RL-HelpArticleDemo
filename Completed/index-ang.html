@@ -66,10 +66,13 @@
             <ul class="nav nav-tabs nav-stacked main-menu">
               <li class="nav-header hidden-tablet" data-toggle="collapse" data-target=
         ".top-nav.nav-collapse,.sidebar-nav.nav-collapse">Categories</li>
-
-              <li ng-repeat="cat in categories"><a
-              class="ajax-link" href="{{cat.url}}"><i class="icon-{{cat.icon}}"></i>  <span class=
-              "hidden-tablet">{{cat.text}}</span></a></li>
+              <li ng-repeat="cat in categories">
+                <a class="ajax-link" href="{{cat.url}}">
+                  <i class="icon-{{cat.icon}}"></i> 
+                  {{cat.text}} 
+                </a>
+                <div class="hidden-tablet nav-description">{{cat.description}}</div>
+            </li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
